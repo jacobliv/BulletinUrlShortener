@@ -5,9 +5,8 @@ import com.bulletinCodeTest.CodeTest.models.AllUrlResponse;
 import com.bulletinCodeTest.CodeTest.models.ShortenUrlRequest;
 import com.bulletinCodeTest.CodeTest.models.Url;
 import com.bulletinCodeTest.CodeTest.models.UrlResponseStatus;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-import org.mockito.Mockito;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -15,8 +14,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class ShortUrlWorkflowUnitTest {
 

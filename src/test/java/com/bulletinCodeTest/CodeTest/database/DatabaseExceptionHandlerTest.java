@@ -1,9 +1,6 @@
 package com.bulletinCodeTest.CodeTest.database;
 
-import com.bulletinCodeTest.CodeTest.models.ShortenUrlRequest;
 import com.bulletinCodeTest.CodeTest.models.Url;
-import com.bulletinCodeTest.CodeTest.workflow.ShortUrlWorkflow;
-import com.bulletinCodeTest.CodeTest.workflow.UrlShortener;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.web.client.HttpClientErrorException;
@@ -15,7 +12,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

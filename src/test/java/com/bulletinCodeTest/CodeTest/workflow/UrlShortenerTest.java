@@ -1,16 +1,9 @@
 package com.bulletinCodeTest.CodeTest.workflow;
 
-import com.bulletinCodeTest.CodeTest.database.DatabaseExceptionHandler;
-import com.bulletinCodeTest.CodeTest.models.ShortenUrlRequest;
-import com.bulletinCodeTest.CodeTest.models.Url;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class UrlShortenerTest {
 
