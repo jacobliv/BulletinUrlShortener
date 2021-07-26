@@ -1,6 +1,7 @@
 package com.bulletinCodeTest.CodeTest.models;
 
 import java.util.List;
+import java.util.Objects;
 
 /***
  * Response for retrieving all Urls currently in the database
@@ -31,5 +32,18 @@ public class AllUrlResponse {
 
     public void setUrlList(List<Url> urlList) {
         this.urlList = urlList;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AllUrlResponse response = (AllUrlResponse) o;
+        return status == response.status && Objects.equals(urlList, response.urlList);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(status, urlList);
     }
 }

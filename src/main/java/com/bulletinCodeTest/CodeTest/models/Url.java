@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /***
  * The main Url model that contains the full url, short url, and creation date
@@ -79,5 +80,18 @@ public class Url {
                 ", fullUrl='" + fullUrl + '\'' +
                 ", shortUrl='" + shortUrl + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Url url = (Url) o;
+        return id == url.id && Objects.equals(fullUrl, url.fullUrl) && Objects.equals(shortUrl, url.shortUrl);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, fullUrl, shortUrl);
     }
 }
