@@ -21,7 +21,7 @@ RestController End-to-End test: I would use MOCK mvc to hit the endpoints as tho
 
 
 ## Endpoints to hit with a curl command/with the returned short url
-###`POST http://localhost:8080/shortUrl`
+### `POST http://localhost:8080/shortUrl`
 
 Request Body:   
   `{ "fullUrl":"<long url goes here>" }`
@@ -36,7 +36,7 @@ Response Body:
 } 
 ```
   
-###`GET http://localhost:8080/<shortUrlvalue>`
+### `GET http://localhost:8080/<shortUrlvalue>`
 
 **No Request or response body since it will redirect you to the appropriate website**
 
